@@ -13,28 +13,62 @@ body {
 
 .play-area {
     position: relative;
-    width: 600px;
-    height: 600px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    max-height: 600px;
     border: 2px solid #fff;
     background-color: #d8c3b0;
+    padding: 10px;
 }
 
 .girl img {
-    width: 30%;
+    width: 100%;
+    max-width: 180px;
+}
+
+.dresses img{
+    position: absolute;
+    left: 15%;
+    cursor: pointer;
+    height: auto; 
+    width: 100%;
+    z-index: 10;
 }
 
 .dresses #grayTshirt {
-    width: 22%;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    cursor: pointer;
+    max-width: 133px;
+    top: 15%;
 }
 
 .dresses #blueJeans {
-    width: 20%; 
-    position: absolute;
-    top: 200px;
-    left: 10px;
-    cursor: pointer;
+    max-width: 122px;
+    top: 43%;
 }
+
+@media (max-width: 1300px) {
+
+    .play-area {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .dresses img{
+        left: 5%
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .dresses img{
+        position: relative;
+    }
+
+    .dresses{
+        order: 2;
+    }
+  }
