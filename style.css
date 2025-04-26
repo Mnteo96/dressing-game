@@ -1,0 +1,40 @@
+body {
+    background-color: #b19682;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(232, 223, 214);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-area {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: 2px solid #fff;
+    background-color: #d8c3b0;
+}
+
+.girl img {
+    width: 30%;
+}
+
+.dresses #grayTshirt {
+    width: 22%;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    cursor: pointer;
+}
+
+.dresses #blueJeans {
+    width: 20%; 
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    cursor: pointer;
+}
