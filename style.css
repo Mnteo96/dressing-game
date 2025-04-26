@@ -58,17 +58,3 @@ body {
     }
 }
 
-@media (max-width: 700px) {
-    .container {
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .dresses img{
-        position: relative;
-    }
-
-    .dresses{
-        order: 2;
-    }
-  }
